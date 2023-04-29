@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubhi Fitness Centre</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('33.jpg');
+        }
+
+        .left {
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            display: inline-block;
+            /*border: 3px solid rebeccapurple;*/
+
+        }
+
+        .mid {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            display: block;
+            width: 41%;
+            margin: 20px auto;
+           /* border: 3px solid blueviolet;*/
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            color: aliceblue;
+            text-decoration: none;
+            padding: 15px 11px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .left img {
+            width: 53px;
+        }
+
+        .left {
+            text-align: center;
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+
+            /* border:3px solid rgb(19, 19, 153);*/
+        }
+
+        .header input {
+            border: 2px solid black;
+            border-radius: 22px;
+            padding: 13px 37px;
+            width: 111px;
+        }
+
+        .container {
+           /* border: 2px solid green;*/
+            margin: 88px 47px;
+            padding: 43px;
+            width: 31%;
+            border-radius: 29px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 389px;
+            padding: 1px 2px;
+            margin: 2px auto;
+            border: 2px solid black;
+            font-size: 20px;
+            font-family: cursive;
+        }
+
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width:24%;
+            margin:2px;
+           
+        }
+        .container button:hover{
+            background-color: aquamarine;
+        }
+
+        #state{
+            background-color:white;
+            display: inline-block;
+            text-align: center;
+            width:39%;
+            margin:14px 4px;
+            padding:4px 4px;
+            border:2px solid black;
+            font-size: 16px;
+            font-family: cursive;
+        }
+        .form-group label{
+            background-color: rgb(102, 81, 124);
+            display: inline-block;
+            text-align: center;
+            width:39%;
+            margin:4px 4px;
+            padding:4px 4px;
+            border:2px solid black;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .form-group1{
+            color:rgb(78, 77, 77);
+            background-color: white;
+            display:inline-block;
+            width:91%;
+            margin:1px 0px;
+            padding:1px 1px;
+            border:2px solid black;
+            font-size: 18px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.jpg" alt="">
+            <div>Saumya Fitness</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <input type="text" name="search" id="search" placeholder="Feel free to search anything">
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best Gym</h1>
+        <form action="backend.php"></form>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <input type="email" name="" placeholder="Enter your email-id">
+        </div>
+        <div class="form-group1">
+            Gender: Male <input type="radio"name="mygender"> Female <input type="radio"name="mygender">Other <input type="radio"name="mygender">
+        </div>
+        <div class="form-group">
+            <label for="State">State</label>
+            <select name="mystate" id="state">
+                <option value="Bhagwanpur">Bhagwanpur</option>
+                <option value="Alkapuri">Alkapuri</option>
+                <option value="Sikandarpur">Sikandarpur</option>
+                <option value="YadavNagar">YadavNagar</option>
+                <option value="AghoriaBazar">AghoriaBazar</option>
+            </select>
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+
+</body>
+
+</html>
